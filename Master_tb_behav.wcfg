@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Master_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Master_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="639184000fs"></ZoomStartTime>
+      <ZoomEndTime time="733484001fs"></ZoomEndTime>
+      <Cursor1Time time="2800000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/Master_tb/CLK_SYSn" type="logic">
+      <obj_property name="ElementShortName">CLK_SYSn</obj_property>
+      <obj_property name="ObjectShortName">CLK_SYSn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/DCLK_125MHz_P_I" type="logic">
+      <obj_property name="ElementShortName">DCLK_125MHz_P_I</obj_property>
+      <obj_property name="ObjectShortName">DCLK_125MHz_P_I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/I_DAC_I" type="array">
+      <obj_property name="ElementShortName">I_DAC_I[13:0]</obj_property>
+      <obj_property name="ObjectShortName">I_DAC_I[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/Q_DAC_I" type="array">
+      <obj_property name="ElementShortName">Q_DAC_I[13:0]</obj_property>
+      <obj_property name="ObjectShortName">Q_DAC_I[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/Data_Bus_O" type="array">
+      <obj_property name="ElementShortName">Data_Bus_O[13:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_Bus_O[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/DCLKIO_O" type="logic">
+      <obj_property name="ElementShortName">DCLKIO_O</obj_property>
+      <obj_property name="ObjectShortName">DCLKIO_O</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/DCLK_125MHz_P_90_I" type="logic">
+      <obj_property name="ElementShortName">DCLK_125MHz_P_90_I</obj_property>
+      <obj_property name="ObjectShortName">DCLK_125MHz_P_90_I</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/DCLKIO_INT" type="logic">
+      <obj_property name="ElementShortName">DCLKIO_INT</obj_property>
+      <obj_property name="ObjectShortName">DCLKIO_INT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/CLK_SYS" type="logic">
+      <obj_property name="ElementShortName">CLK_SYS</obj_property>
+      <obj_property name="ObjectShortName">CLK_SYS</obj_property>
+      <obj_property name="CustomSignalColor">#D2691E</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/Data_In" type="array">
+      <obj_property name="ElementShortName">Data_In[39:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_In[39:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/Start" type="logic">
+      <obj_property name="ElementShortName">Start</obj_property>
+      <obj_property name="ObjectShortName">Start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/Start_INT" type="logic">
+      <obj_property name="ElementShortName">Start_INT</obj_property>
+      <obj_property name="ObjectShortName">Start_INT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/CS_n" type="logic">
+      <obj_property name="ElementShortName">CS_n</obj_property>
+      <obj_property name="ObjectShortName">CS_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/SCLK" type="logic">
+      <obj_property name="ElementShortName">SCLK</obj_property>
+      <obj_property name="ObjectShortName">SCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/State" type="other">
+      <obj_property name="ElementShortName">State</obj_property>
+      <obj_property name="ObjectShortName">State</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/Bit_CNT" type="array">
+      <obj_property name="ElementShortName">Bit_CNT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Bit_CNT[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/Data_In" type="array">
+      <obj_property name="ElementShortName">Data_In[39:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_In[39:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/RW_CTL" type="logic">
+      <obj_property name="ElementShortName">RW_CTL</obj_property>
+      <obj_property name="ObjectShortName">RW_CTL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/SDIO" type="logic">
+      <obj_property name="ElementShortName">SDIO</obj_property>
+      <obj_property name="ObjectShortName">SDIO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/uut/RX_Data" type="array">
+      <obj_property name="ElementShortName">RX_Data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RX_Data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/SCLK_Start" type="logic">
+      <obj_property name="ElementShortName">SCLK_Start</obj_property>
+      <obj_property name="ObjectShortName">SCLK_Start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/CLK_SYS_periodn" type="other">
+      <obj_property name="ElementShortName">CLK_SYS_periodn</obj_property>
+      <obj_property name="ObjectShortName">CLK_SYS_periodn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Master_tb/SCLK_period" type="other">
+      <obj_property name="ElementShortName">SCLK_period</obj_property>
+      <obj_property name="ObjectShortName">SCLK_period</obj_property>
+   </wvobject>
+</wave_config>

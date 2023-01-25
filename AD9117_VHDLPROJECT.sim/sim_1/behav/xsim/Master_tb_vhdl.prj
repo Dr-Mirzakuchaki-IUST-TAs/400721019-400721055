@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd" \
+"../../../../AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd" \
+
+# Do not sort compile order
+nosort
