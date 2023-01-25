@@ -1,0 +1,392 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 25 22:18:39 2023
+# Process ID: 10736
+# Current directory: F:/VIVADO/AD9117_VHDLPROJECT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5612 F:\VIVADO\AD9117_VHDLPROJECT\AD9117_VHDLPROJECT.xpr
+# Log file: F:/VIVADO/AD9117_VHDLPROJECT/vivado.log
+# Journal file: F:/VIVADO/AD9117_VHDLPROJECT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.sim/sim_1/behav/xsim/simulate.log"
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tsbv484-3
+INFO: [Device 21-403] Loading part xc7a200tsbv484-3
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1193.395 ; gain = 287.996
+INFO: [Common 17-344] 'open_run' was cancelled
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.runs/synth_1
+
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a200tsbv484-3
+Top: Master_tb
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1338.508 ; gain = 111.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Master_tb' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:8]
+INFO: [Synth 8-638] synthesizing module 'Master' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:32]
+INFO: [Synth 8-3491] module 'DCLK_125MHz' declared at 'f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz.v:72' bound to instance 'your_instance_name' of component 'DCLK_125MHz' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:77]
+INFO: [Synth 8-6157] synthesizing module 'DCLK_125MHz' [f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz.v:72]
+INFO: [Synth 8-6157] synthesizing module 'DCLK_125MHz_clk_wiz' [f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz_clk_wiz.v:70]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [F:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [F:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [F:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 8.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 90.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [F:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [F:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [F:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'DCLK_125MHz_clk_wiz' (4#1) [f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz_clk_wiz.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'DCLK_125MHz' (5#1) [f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz.v:72]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'DCLKIO_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:87]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:104]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'Data_Bus_ODDR_inst' to cell 'ODDR' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:117]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUF_inst' to cell 'OBUF' [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:137]
+WARNING: [Synth 8-6014] Unused sequential element RX_Data_reg was removed.  [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:169]
+INFO: [Synth 8-256] done synthesizing module 'Master' (6#1) [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master.vhd:32]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: all but final waveform element [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:52]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:65]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: all but final waveform element [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:78]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: all but final waveform element [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:89]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: all but final waveform element [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:102]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:114]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: all but final waveform element [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:123]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: all but final waveform element [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:188]
+INFO: [Synth 8-256] done synthesizing module 'Master_tb' (7#1) [F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/new/Master_tb.vhd:8]
+WARNING: [Synth 8-3331] design Master has unconnected port SCLK
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1379.605 ; gain = 152.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1382.027 ; gain = 155.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1382.027 ; gain = 155.266
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. uut/your_instance_name/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[0].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[10].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[11].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[12].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[13].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[1].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[2].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[3].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[4].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[5].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[6].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[7].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[8].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/Data_Bus_OBUF_Gen[9].OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. uut/OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz_board.xdc] for cell 'uut/your_instance_name/inst'
+Finished Parsing XDC File [f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz_board.xdc] for cell 'uut/your_instance_name/inst'
+Parsing XDC File [f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz.xdc] for cell 'uut/your_instance_name/inst'
+Finished Parsing XDC File [f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz.xdc] for cell 'uut/your_instance_name/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.srcs/sources_1/ip/DCLK_125MHz/DCLK_125MHz.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Master_tb_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Master_tb_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1502.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1638.980 ; gain = 412.219
+51 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1638.980 ; gain = 412.219
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.sim/sim_1/behav/xsim/simulate.log"
+report_ip_status -name ip_status 
+reset_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+WARNING: [Vivado 12-3661] Failed to remove file:F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.sim/sim_1/behav/xsim/Master_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.sim/sim_1/behav/xsim/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.sim/sim_1/behav/xsim/xsim.dir/Master_tb_behav/xsim.xdbg
+WARNING: [Vivado 12-4421] Failed to remove directory:F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.sim/sim_1/behav/xsim/xsim.dir/Master_tb_behav
+WARNING: [Vivado 12-4421] Failed to remove directory:F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.sim/sim_1/behav/xsim/xsim.dir
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.sim/sim_1/behav/xsim/simulate.log"
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 25 22:23:46 2023...

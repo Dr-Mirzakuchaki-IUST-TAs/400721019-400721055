@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 25 22:15:35 2023
+# Process ID: 5432
+# Current directory: F:/VIVADO/AD9117_VHDLPROJECT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18000 F:\VIVADO\AD9117_VHDLPROJECT\AD9117_VHDLPROJECT.xpr
+# Log file: F:/VIVADO/AD9117_VHDLPROJECT/vivado.log
+# Journal file: F:/VIVADO/AD9117_VHDLPROJECT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.xpr
+update_compile_order -fileset sources_1
+launch_simulation
