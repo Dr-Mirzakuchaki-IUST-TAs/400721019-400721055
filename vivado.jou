@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 25 22:23:49 2023
+# Process ID: 26224
+# Current directory: F:/VIVADO/AD9117_VHDLPROJECT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17244 F:\VIVADO\AD9117_VHDLPROJECT\AD9117_VHDLPROJECT.xpr
+# Log file: F:/VIVADO/AD9117_VHDLPROJECT/vivado.log
+# Journal file: F:/VIVADO/AD9117_VHDLPROJECT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/VIVADO/AD9117_VHDLPROJECT/AD9117_VHDLPROJECT.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Master_tb.tcl
+run 900 ns
+relaunch_sim
+run 900 ns
+run 900 ns
+relaunch_sim
+run 900 ns
+save_wave_config {F:/VIVADO/AD9117_VHDLPROJECT/Master_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse F:/VIVADO/AD9117_VHDLPROJECT/Master_tb_behav.wcfg
+set_property xsim.view F:/VIVADO/AD9117_VHDLPROJECT/Master_tb_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+save_wave_config {F:/VIVADO/AD9117_VHDLPROJECT/Master_tb_behav.wcfg}
+save_wave_config {F:/VIVADO/AD9117_VHDLPROJECT/Master_tb_behav.wcfg}
+save_wave_config {F:/VIVADO/AD9117_VHDLPROJECT/Master_tb_behav.wcfg}
+run 900 ns
+run 900 ns
+save_wave_config {F:/VIVADO/AD9117_VHDLPROJECT/Master_tb_behav.wcfg}
+save_wave_config {F:/VIVADO/AD9117_VHDLPROJECT/Master_tb_behav.wcfg}
